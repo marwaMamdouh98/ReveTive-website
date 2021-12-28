@@ -1,0 +1,838 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Zen Old Mincho', serif;
+    font-family: 'Roboto', sans-serif;
+
+}/*start header*/
+.header{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+/*start fisrt item of header calling*/
+.calling_header{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid lightgray;
+    
+}
+/*start fisrt item of calling  number*/
+.num_calling{
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+    
+}
+.num_calling .num1{
+    display: flex;
+    flex-flow: row wrap;
+    margin-right:  10px;
+    color: gray;
+}
+.num_calling .num1 >i{
+    color: rgb(75, 122, 194);
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.num_calling .num2{
+    display: flex;
+    flex-flow: row wrap;
+    margin-right:  10px;
+    color: gray;
+}
+.num_calling .num2 >i{
+    color: rgb(39, 143, 212);
+    padding-right: 5px;
+    padding-top: 3px;
+}
+/*start fisrt item of calling  icons*/
+.icons_calling{
+    text-align: right;
+    margin: auto;
+}
+.icons_calling >i{
+    width: 30px;
+    border-left: 1px solid lightgray;
+    text-align: center;
+    color: gray;
+}
+.icons_calling > .icon_bord{
+    border: none;
+}
+/*end fisrt item of calling */
+/*start fisrt item of nav */
+.nav{
+    width: 90%;
+    margin:0px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav .logo{
+    width: 30%;
+    margin:0px auto;
+    display: flex;
+    align-items: center;
+}
+.nav .logo >h1{
+    font-size: 25px;
+}
+.logo .logo_color{
+    color: rgb(39, 143, 212);
+}
+.nav .nav_list{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav .nav_list ul{
+    list-style-type: none;
+    
+}
+.nav .nav_list ul li{
+    list-style-type: none;
+    padding: 10px 15px;
+    float: left;
+    
+}
+.nav .nav_list ul li .active_nav{
+    color: rgb(39, 143, 212);
+}
+.nav .nav_list ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: gray;
+    font-size: 20px;
+}
+
+/*end fisrt item of nav */
+/*end header*/
+/*start home*/
+.home{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/bg_image_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .bg_home{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*start home text*/
+.home_text{
+    width: 50%;
+    margin: auto;
+    text-transform: capitalize;
+    color: rgb(233, 233, 233);
+}
+.home_text >p{
+    font-size: 20px;
+    
+}
+.home_text >h1{
+    font-size: 50px;
+    padding: 20px 0px;
+}
+.home_text > .home_btn{
+    padding: 15px 30px;
+    border: 1px solid rgb(233, 233, 233);
+    color: rgb(233, 233, 233);
+    background-color: transparent;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.home_text > .home_btn:hover{
+    background-color:rgb(39, 143, 212) ;
+    color: white;
+    border: 1px solid rgb(39, 143, 212);
+    transition: all 1s;
+}
+
+/*start scroll*/
+.home_scroll{
+    width: 11%;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.home_scroll .scroll1 , .home_scroll .scroll{
+    width:30% ;
+    height: 5px;
+    background-color: rgb(39, 143, 212);
+}
+.home_scroll .scroll{
+    background-color: rgb(233, 233, 233);
+}
+/*end home*/
+/*start about */
+.about{
+    width: 85%;
+    margin:100px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*start text of about*/
+.about_text{
+    width: 40%;
+    color: gray;
+    
+}
+.about_text >h1{
+    padding: 10px 0px;
+    font-size: 35px;
+    color: black;
+}
+.about_text h1 > span{
+    color: rgb(39, 143, 212);
+}
+.about_text >p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.about_text > .about_btn{
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    margin: 30px 0px;
+    background-color: rgb(39, 143, 212);
+    border: 1px solid  rgb(39, 143, 212);
+}
+.about_text > .about_btn:hover{
+    color: rgb(39, 143, 212);
+    border: 1px solid  rgb(39, 143, 212);
+    background-color: transparent;
+    transition: all 1s;
+}
+/*start style of image of about*/
+.about_img{
+    width:50%;
+    transform:skew(-5deg);
+}
+.about_img >img{
+    width: 80%;
+    border-radius: 15px;
+    
+}
+/*end about*/
+/*start style of services*/
+.services{
+    width: 100%;
+    margin: 20px auto;
+    
+}
+/*start style of tittle of services*/
+.services_tittle{
+    width: 40%;
+    margin:10px auto;
+    padding: 30px 0px;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    
+}
+.services_tittle > p{
+    color: gray;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+/*start style of items of services*/
+.serv_items{
+    width: 80%;
+    margin:20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.serv_items .serv_item{
+    width: 23%;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(122, 113, 113);
+    text-transform: capitalize;
+}.serv_items .serv_item:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    transition: all 1s;
+}
+.serv_item >h3{
+    padding: 20px 0px;
+}
+/*end style of services*/
+/*start style of our team*/
+.team{
+    width: 100%;
+    margin: 20px auto;
+    
+}
+/*start style of tittle of services*/
+.team_tittle{
+    width: 25%;
+    margin:10px auto;
+    padding: 30px 0px;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    
+}
+.team_tittle > p{
+    color: gray;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+/*start style of items of team*/
+.team_items{
+    width: 80%;
+    margin:30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.team_item{
+    width: 33%;
+    margin: auto;
+    text-transform: capitalize;
+    color: gray;
+}   
+.item_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item_img > img{
+    width: 80%;
+    border-radius: 25px;
+}
+.item_text> h3{
+    padding-top: 15px;
+    color: black;
+}
+.item_text> p{
+    padding: 10px 0px;
+}
+.item_text ,.item_icon{
+    margin-left: 60px;
+}   
+.item_icon >i{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: lightgray;
+    color: gray;
+    
+}
+.item_icon >i:hover{
+    background-color: rgb(39, 143, 212);
+    color: white;
+}
+
+/*end style of our team*/
+/*start style of portfolio*/
+.portfolio{
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+.portfolio_tittle{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 50px 0px;
+}
+.portfolio_tittle .prot_text{
+    width: 70%;
+    text-transform:capitalize ;
+}
+.prot_text >p{
+    color: gray;
+    font-size: 18px;
+}
+.port_button{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+   
+}
+.port_button > .port_btn{
+    padding: 15px 30px;
+    color: rgb(39, 143, 212);
+    border: 1px solid rgb(39, 143, 212);
+    background-color: transparent;
+    border-radius: 5px;
+    text-transform:capitalize ;
+}
+.port_button > .port_btn:hover{
+    background-color: rgb(39, 143, 212);
+    border: 1px solid rgb(39, 143, 212);
+    color: white;
+    transition: all 1s;
+}
+.port_button .port_btn >i{
+    padding-left: 10px;
+}
+/*end style of tittle of portfolio*/
+/*start style of portfolio items*/
+.portfolio_items{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+} 
+ .port_item{
+    width: 32%;
+    margin-bottom: 15px;
+}
+.port_item img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*end style of portfolio items*/
+/*end style of portfolio*/
+/*start style of testmonial*/
+.testmonial{
+    width: 80%;
+    margin: 100px auto;    
+}
+.testmonial_items{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+
+}
+.test_item{
+    width: 31%;
+    padding: 20px;
+    background-color: rgb(232, 239, 241);
+    border-radius: 10px;
+    line-height: 1.5;
+}
+.test_item >p{
+    padding-top: 10px;
+    color: rgb(83, 77, 77);
+}
+.test_box{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+.test_box .box_img{
+    width: 15%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.box_img > img{
+    width: 100%;
+    border-radius: 50%;
+}
+.box_text{
+    text-transform: capitalize;
+    
+}
+.test_box .box_text > p{
+    color: rgb(138, 138, 138);
+    
+}
+/*start scroll*/
+.testmonial_scroll{
+    width: 11%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+.testmonial_scroll .scroll1 , .testmonial_scroll .scroll{
+    width:30% ;
+    height: 5px;
+    margin-right: 10px;
+    background-color: rgb(39, 143, 212);
+}
+.testmonial_scroll .scroll{
+    background-color: lightgray;
+}
+/*end style of testmonial*/
+/*start style of news*/
+.news{
+    width: 80%;
+    margin: 60px auto;
+}
+/*start style of tittle of services*/
+.news_tittle{
+    width: 40%;
+    margin:10px auto;
+    padding: 30px 0px;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    
+}
+.news_tittle > p{
+    color: gray;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+/*start style of news items*/
+.news_items{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+.news_item{
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:0px 1px 6px 1px lightgrey;
+}
+.news_item:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+/*start style of active aitem*/
+.active{
+    background-color:rgb(39, 143, 212)  ;
+    color: white;
+}
+.active .news_box .box_text{
+    margin-top: 20px;
+}
+.active .news_box .box_text >p{
+    color: rgb(190, 188, 188);
+}
+.active .news_link{
+    margin-top: 80px;
+}
+.active .news_link > a ,.active .news_link > i {
+    color: white;
+}
+/*start style of news box*/
+.news_box{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+.news_box .box_img{
+    width: 22%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.box_img > img{
+    width: 100%;
+    border-radius: 50%;
+}
+.box_text{
+    text-transform: capitalize;
+}
+.news_box .box_text > p{
+    color: rgb(163, 161, 161);
+}
+/*end style of news box*/
+/*start style of news text*/
+.news_text >h3{
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+.news_text > p{
+    color: rgb(163, 161, 161);
+    padding-bottom: 10px ;
+}
+
+/*end style of news text*/
+/*start style of news link*/
+.news_link{
+    padding: 10px 0px;
+    font-size: 18px;
+}
+.news_link > a{
+    color:rgb(39, 143, 212) ;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.news_link > i{
+    color:rgb(39, 143, 212) ;
+    
+}
+/*end style of news link*/
+/*start style of news button*/
+.news_button{
+    width: 30%;
+    margin:40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news_button >.news_btn{
+    padding: 15px 30px;
+    background-color:rgb(39, 143, 212) ;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    border: 1px solid rgb(39, 143, 212) ;
+}
+.news_btn:hover{
+    border: 1px solid rgb(39, 143, 212) ;
+    color:rgb(39, 143, 212) ;
+    background-color: transparent;
+    transition: all 1s;
+}
+/*end style of news*/
+/*start style of contact*/
+.contact{
+    margin: 30px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*start style of contact tittle*/
+.contact_tittle{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.contact_tittle p{
+    padding: 20px 0px;
+    color: gray;
+}
+.contact_tittle p >a{
+    color:rgb(39, 143, 212) ;
+}
+/*end style of contact tittle*/
+/*start style of contact form*/
+.contact_form{
+    width: 60%; 
+    margin-top: 30px;  
+    margin-bottom: 80px; 
+}
+form {
+    display: flex;
+    flex-flow: row wrap;
+    color: gray;
+    text-transform: capitalize;
+}
+.container{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    
+}
+.contact_form form input:focus , .contact_form form textarea:focus{
+    outline: none;
+}
+.lab1 , .lab2{
+    width: 50%;
+    color: gray;
+    font-size: 18px;
+    
+}
+.lab3 , .lab4{
+    width:100%;
+    color: gray;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.inp_name , .inp_mail ,.inp_sub ,.inp_text {
+    margin: 10px 0px;
+    padding: 15px;
+    width: 95%;
+    background-color: rgb(232, 239, 241);
+    border: none;
+    font-size: 16px;
+}
+.inp_mail ,.inp_sub ,.inp_text{
+    width: 100%;
+}
+.contact_btn{
+    padding: 15px 50px;
+    background-color:rgb(39, 143, 212) ;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    border: 1px solid rgb(39, 143, 212) ;
+}
+.contact_btn:hover{
+    border: 1px solid rgb(39, 143, 212) ;
+    color:rgb(39, 143, 212) ;
+    background-color: transparent;
+    transition: all 1s;
+}
+
+/*end style of contact form*/
+/*end style of contact*/
+/*start style of clients*/
+.clients{
+    width: 100%;
+    margin:50px auto;
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+.client_items{
+    width: 20%;
+    padding-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.client_items img{
+    width: 60%;
+}
+.special img{
+    width: 45%;
+    
+}
+.special1 img{
+    width: 80%;
+}
+
+/*end style of clients*/
+/*start style of footer*/
+.footer{
+    width: 100%;
+    background-color: #0f0a32;
+    margin-top: 40px;
+}
+/*start style of footer items*/
+.footer_items{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.footer_item{
+    width: 20%;
+    margin: 40px auto;
+    text-transform: capitalize;
+    color: white;
+}
+.footer_item h2{
+    padding-bottom: 10px;
+}
+/*first item*/
+.footer_logo .logo_color{
+    color: rgb(39, 143, 212);
+}
+.footer_item >p{
+    color:rgb(168, 167, 167) ;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+/*second item*/
+.footer_item ul{
+    list-style-type: none;
+    
+}
+.footer_item ul li{
+    color:rgb(168, 167, 167) ;
+    padding: 11px 0px;
+    font-size: 17px;
+}
+/*third item*/
+.footer_item form{
+    margin: 10px 0px;
+}
+.footer_item form .inp_email{
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+.footer_item form .inp_email:focus{
+    outline: none;
+}
+.footer_item form .footer_btn{
+    padding: 15px 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(39, 143, 212); 
+    text-transform: capitalize;
+    font-size: 16px;
+    border: 1px solid rgb(39, 143, 212);
+}
+.footer_item form .footer_btn:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 1s;
+}
+/*end style of footer items*/
+/*start style of footer copy*/
+.footer_copy{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.coby_text{
+    width: 50%;
+    color:rgb(168, 167, 167) ;
+    font-size: 18px;
+}
+.coby_text p > a{
+    color: rgb(39, 143, 212);
+}
+.copy_icon >i {
+    color:rgb(168, 167, 167) ;
+    padding: 10px 10px;
+    background-color: rgba(112, 110, 110, 0.3);
+    border-radius: 50%;
+}
+.copy_icon >i:hover{
+    color:white ;
+    background-color: rgb(39, 143, 212);
+    transition: all 1s;
+}
+/*start style of footer copy*/
+/*end style of footer*/
